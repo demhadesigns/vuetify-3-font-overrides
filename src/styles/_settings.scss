@@ -1,0 +1,25 @@
+$font-aurum: "AURUM";
+$font-chunky: "CHUNKY";
+
+@use 'vuetify/settings' with (
+  $heading-font-family: $font-chunky, // Font for h1-h6
+  $body-font-family: $font-aurum, // Font for text-body etc
+  $typography: (
+    'h1': (
+      'size': 70px,
+      'weight': 300,
+      'line-height': 6rem,
+      'letter-spacing': -.015625em,
+      'font-family': $font-chunky, // If you want to override that specific font
+      'text-transform': none
+    ),
+    'h2': (
+      'size': 48px,
+      'weight': 300,
+      'line-height': 6rem,
+      'letter-spacing': -.015625em,
+      'font-family': $font-aurum, // If you want to override that specific font
+      'text-transform': none
+    ),
+  )
+)
